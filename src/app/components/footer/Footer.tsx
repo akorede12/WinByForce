@@ -8,33 +8,35 @@ export const Footer = () => {
         <div className="md:flex justify-center items-start md:gap-[100px]">
           <div className="flex flex-row gap-[100px]">
             <div className="pt-[20px] sm:pt-0 flex flex-col gap-7">
-              <p className="text-[#BBBBBB] text-[25px] md:text-[40px] font-semibold">
+              <p className="text-[#BBBBBB] text-[15px] md:text-[20px] font-semibold">
                 Learn & Earn
               </p>
             </div>
 
             <div className="pt-[20px] sm:pt-0 flex flex-col gap-7">
-              <p className="text-[#BBBBBB] text-[25px] md:text-[40px] font-semibold">
+              <p className="text-[#BBBBBB] text-[15px] md:text-[20px] font-semibold">
                 Protocols
               </p>
             </div>
 
             <div className="pt-[20px] sm:pt-0 flex flex-col gap-7">
-              <p className="text-[#BBBBBB] text-[25px] md:text-[40px] font-semibold">
+              <p className="text-[#BBBBBB] text-[15px] md:text-[20px] font-semibold">
                 Community
               </p>
             </div>
 
             <div className="pt-[20px] sm:pt-0 flex flex-col gap-7">
-              <p className="text-[#BBBBBB] text-[25px] md:text-[40px] font-semibold">
+              <p className="text-[#BBBBBB] text-[15px] md:text-[20px] font-semibold">
                 Terms Of Service
               </p>
             </div>
           </div>
         </div>
-        <p className="text-[#BBBBBB] text-[25px] md:text-[40px] font-semibold">
+        <div>
+        <p className="text-[#BBBBBB] text-[15px] md:text-[20px] font-semibold">
           BlocQuest 2024
         </p>
+        </div>
       </div>
     </div>
   );
