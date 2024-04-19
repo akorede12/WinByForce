@@ -5,7 +5,7 @@ const HeroButtons = () => {
     <div className="bg-black w-[100vw] ">
       <div className="container mx-auto px-8 sm:px-[80px] py-[100px]">
         <div className="bg-black grid-cols-4 gap-4 md:flex md:flex-row">
-          <div className="bg-[#0B0D0D] w-1/4 justify-center p-2 rounded-lg">
+          <div className="bg-[#0B0D0D] w-1/4 place-content-center p-2 rounded-lg">
             <Image
               src="./polygon.svg"
               alt="polygon"
@@ -14,7 +14,7 @@ const HeroButtons = () => {
             />
           </div>
 
-          <div className="bg-[#0B0D0D] justify-center w-1/4 p-2 rounded-lg">
+          <div className="bg-[#0B0D0D] place-content-center w-1/4 p-2 rounded-lg">
           <Image
               src="./hyperledger.svg"
               alt="hyperledger"
@@ -23,7 +23,7 @@ const HeroButtons = () => {
             />
           </div>
 
-          <div className="bg-[#0B0D0D] justify-center w-1/4 p-2 rounded-lg">
+          <div className="bg-[#0B0D0D] place-content-center w-1/4 p-2 rounded-lg">
           <Image
               src="./zk.svg"
               alt="zk"
@@ -31,7 +31,7 @@ const HeroButtons = () => {
               height={100}
             />
           </div>
-          <div className="bg-[#0B0D0D] justify-center w-1/4 p-2 rounded-lg">
+          <div className="bg-[#0B0D0D] place-content-center w-1/4 p-2 rounded-lg">
           <Image
               src="./hyperlane.svg"
               alt="hyperlane"
