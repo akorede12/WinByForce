@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
+import NavBar from "@/components/header/Navbar";
+import { Footer } from "@/components/footer/Footer";
 import HeroButtons from "@/components/herobuttons/HeroButton";
 import Browse from "@/components/browse/Browse";
 import How from "@/components/how/How";
@@ -7,6 +10,9 @@ import Experience from "@/components/experience/Experience";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div>
+        <NavBar />
+      </div>  
       <section>
         <Image
           src="./heroimage.svg"
@@ -34,7 +40,7 @@ export default function Home() {
         </h4>
         <div className="flex gap-2 mt-2">
           <button className="bg-[#C510C9] hover:bg-white text-white font-semibold py-2  border-[#C510C9] border-2 w-40 h-10 rounded-full">
-            LEARN & EARN
+            <Link href="/quiz">LEARN & EARN</Link>
           </button>
           <button className="bg-transparent hover:bg-white text-white font-semibold py-2  border-white border-2 w-64 h-10 rounded-full">
             REGISTER AS PROTOCOL
@@ -52,6 +58,9 @@ export default function Home() {
       </div>
       <div>
         <Experience />
+      </div>
+      <div>
+        <Footer />
       </div>
     </main>
   );
