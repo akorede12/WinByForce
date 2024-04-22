@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import NavBar from "@/components/header/Navbar";
-import { Footer } from "@/components/footer/Footer";
 import HeroButtons from "@/components/herobuttons/HeroButton";
 import Browse from "@/components/browse/Browse";
 import How from "@/components/how/How";
@@ -10,9 +8,7 @@ import Experience from "@/components/experience/Experience";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        <NavBar />
-      </div>  
+       
       <section>
         <Image
           src="./heroimage.svg"
@@ -59,9 +55,7 @@ export default function Home() {
       <div>
         <Experience />
       </div>
-      <div>
-        <Footer />
-      </div>
+      
     </main>
   );
 }
