@@ -84,7 +84,7 @@ export default function Completed() {
 
               <div className="mt-8">
                 <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-60 h-10 rounded-full">
-                  VIEW RESOURCES
+                  <Link href="/resources">VIEW RESOURCES</Link>
                 </button>
               </div>
             </div>

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Protocol() {
   return (
@@ -139,7 +140,7 @@ export default function Protocol() {
 
             <div className="mb-4 mx-4">
               <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                View Resources
+                <Link href="/resources">View Resources</Link>
               </button>
             </div>
           </div>
@@ -168,7 +169,7 @@ export default function Protocol() {
 
             <div className="mb-4 mx-4">
               <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                View Resources
+                <Link href="/resources">View Resources</Link>
               </button>
             </div>
           </div>
@@ -198,7 +199,7 @@ export default function Protocol() {
 
             <div className="mb-4 mx-4">
               <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                View Resources
+                <Link href="/resources">View Resources</Link>
               </button>
             </div>
           </div>
@@ -227,7 +228,7 @@ export default function Protocol() {
 
             <div className="mb-7 mx-4">
               <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                View Resources
+                <Link href="/resources">View Resources</Link>
               </button>
             </div>
           </div>
@@ -257,7 +258,7 @@ export default function Protocol() {
 
             <div className="mb-4 mx-4">
               <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                View Resources
+                <Link href="/resources">View Resources</Link>
               </button>
             </div>
           </div>
@@ -286,7 +287,7 @@ export default function Protocol() {
 
             <div className="mb-4 mx-4">
               <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                View Resources
+                <Link href="/resources">View Resources</Link>
               </button>
             </div>
           </div>
@@ -315,7 +316,7 @@ export default function Protocol() {
 
             <div className="mb-4 mx-4">
               <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                View Resources
+                <Link href="/resources">View Resources</Link>
               </button>
             </div>
           </div>
@@ -344,7 +345,7 @@ export default function Protocol() {
 
             <div className="mb-7 mx-4">
               <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                View Resources
+                <Link href="/resources">View Resources</Link>
               </button>
             </div>
           </div>

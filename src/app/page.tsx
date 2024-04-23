@@ -36,7 +36,7 @@ export default function Home() {
         </h4>
         <div className="flex gap-2 mt-2">
           <button className="bg-[#C510C9] hover:bg-white text-white font-semibold py-2  border-[#C510C9] border-2 w-40 h-10 rounded-full">
-            <Link href="/quiz">LEARN & EARN</Link>
+            <Link href="/learn">LEARN & EARN</Link>
           </button>
           <button className="bg-transparent hover:bg-white text-white font-semibold py-2  border-white border-2 w-64 h-10 rounded-full">
             REGISTER AS PROTOCOL

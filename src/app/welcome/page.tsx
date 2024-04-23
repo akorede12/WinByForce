@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Welcome() {
   return (
@@ -18,14 +19,16 @@ export default function Welcome() {
               className="mt-4 mx-48"
             />
             <div className="mx-20 mb-8">
-              <h1 className="text-white font-semibold text-lg font-sans">
-                Learn
-              </h1>
-              <h2 className="text-white font-light text-sm text-justify">
-                Engage with interactive content designed
-                <br />
-                to enhance your knowledge and skills
-              </h2>
+              <Link href="/learn">
+                <h1 className="text-white font-semibold text-lg font-sans">
+                  Learn
+                </h1>
+                <h2 className="text-white font-light text-sm text-justify">
+                  Engage with interactive content designed
+                  <br />
+                  to enhance your knowledge and skills
+                </h2>
+              </Link>
             </div>
           </div>
 
@@ -40,14 +43,16 @@ export default function Welcome() {
               className="mt-4 mx-48"
             />
             <div className="mx-20 mb-8">
-              <h1 className="text-white font-semibold text-lg font-sans">
-                Take Quizzes
-              </h1>
-              <h2 className="text-white font-light text-sm text-justify">
-                Challenge yourself with quizzes tailored to
-                <br />
-                each protocol
-              </h2>
+              <Link href="/quiz">
+                <h1 className="text-white font-semibold text-lg font-sans">
+                  Take Quizzes
+                </h1>
+                <h2 className="text-white font-light text-sm text-justify">
+                  Challenge yourself with quizzes tailored to
+                  <br />
+                  each protocol
+                </h2>
+              </Link>
             </div>
           </div>
         </div>

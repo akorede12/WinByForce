@@ -14,7 +14,7 @@ const NavigationBar: React.FC = () => {
           <Image src="/group.png" alt="Group icon" width={28} height={28} />
           <Link className="text-white text-md mx-4" href="/opts">Opts</Link>
           <button className="bg-[#000000] hover:bg-white text-white font-semibold py-2 px-4 border-[#ffffff] border-2 rounded-full">
-            Connect Wallet
+            <Link href="/welcome">Connect Wallet</Link>
           </button>
           <Image className='ml-4' src="/profileIcon.png" alt="Group icon" width={28} height={28} />
         </div>

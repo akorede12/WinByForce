@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Browse = () => {
   return (
@@ -6,7 +7,7 @@ const Browse = () => {
       <div className="container mx-auto px-8 sm:px-[80px] py-[100px]">
         <div className="md:mx-96 mb-4">
         <button className="bg-transparent hover:bg-white text-white font-semibold py-2  border-white border-2 w-64 h-10 rounded-full">
-          BROWSE PROTOCOL
+            <Link href="/protocol">BROWSE PROTOCOL</Link>
         </button>
         </div>
         <div className="bg-black grid-cols-3 gap-10 md:flex md:flex-row mx-10">
