@@ -86,7 +86,7 @@ export default function Ongoing() {
               </div>
               <div className="mt-8 mb-4">
                 <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                  TAKE QUIZ
+                  <Link href="/quiz">TAKE QUIZ</Link>
                 </button>
               </div>
             </div>

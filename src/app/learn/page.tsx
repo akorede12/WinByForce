@@ -83,12 +83,12 @@ export default function Learn() {
               </div>
               <div className="mt-8">
                 <button className="bg-gradient-to-r from-[#A903D2] to-[#410095] hover:bg-[#410095] text-white font-semibold  border-2 border-[#A903D2] w-36 h-10 rounded-full">
-                  LEARN
+                  <Link href="/learn">LEARN</Link>
                 </button>
               </div>
               <div className="mt-8">
                 <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                  TAKE QUIZ
+                  <Link href="/quiz">TAKE QUIZ</Link>
                 </button>
               </div>
             </div>
@@ -117,12 +117,12 @@ export default function Learn() {
               </div>
               <div className="mt-8 mb-4">
                 <button className="bg-gradient-to-r from-[#A903D2] to-[#410095] hover:bg-[#410095] text-white font-semibold py-2  border-2 border-[#A903D2] w-40 h-10 rounded-full">
-                  LEARN
+                  <Link href="/learn">LEARN</Link>
                 </button>
               </div>
               <div className="mt-8 mb-4">
                 <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                  TAKE QUIZ
+                  <Link href="/quiz">TAKE QUIZ</Link>
                 </button>
               </div>
             </div>
