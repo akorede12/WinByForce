@@ -12,7 +12,7 @@ const NavigationBar: React.FC = () => {
         </div>
         <div className="flex items-center">
           <Image src="/group.png" alt="Group icon" width={28} height={28} />
-          <Link className="text-white text-sm mx-4" href="/opts">Opts</Link>
+          <Link className="text-white text-md mx-4" href="/opts">Opts</Link>
           <button className="bg-[#000000] hover:bg-white text-white font-semibold py-2 px-4 border-[#ffffff] border-2 rounded-full">
             Connect Wallet
           </button>

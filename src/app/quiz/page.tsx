@@ -21,7 +21,7 @@ const QuizLobby: FC = () => {
                         <p className="text-white text-4xl font-bold mb-4">Polygon Innovation</p>
                         <p className="text-white text-4xl font-bold mb-8">and Design</p>
                         <button className="bg-[#C510C9] hover:bg-white text-white font-semibold py-2 border-[#C510C9] border-2 w-40 h-10 rounded-full">
-                            <Link href="/quiz">START QUIZ</Link>
+                            <Link href="/quizzes">START QUIZ</Link>
                         </button>
                     </div>
                 </div>
