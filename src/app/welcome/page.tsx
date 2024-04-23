@@ -21,7 +21,7 @@ export default function Welcome() {
               <h1 className="text-white font-semibold text-lg font-sans">
                 Learn
               </h1>
-              <h2 className="text-white font-light text-sm">
+              <h2 className="text-white font-light text-sm text-justify">
                 Engage with interactive content designed
                 <br />
                 to enhance your knowledge and skills
@@ -43,7 +43,7 @@ export default function Welcome() {
               <h1 className="text-white font-semibold text-lg font-sans">
                 Take Quizzes
               </h1>
-              <h2 className="text-white font-light text-sm">
+              <h2 className="text-white font-light text-sm text-justify">
                 Challenge yourself with quizzes tailored to
                 <br />
                 each protocol

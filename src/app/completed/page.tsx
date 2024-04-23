@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Learn() {
+export default function Completed() {
   return (
     <div className="bg-black w-[100vw] h-[100vh]">
       <div className="container mx-auto px-8 sm:px-[80px] py-[100px]">
@@ -59,7 +59,7 @@ export default function Learn() {
         </div>
         <div className="bg-black grid-row-2 gap-4 grid-flow-col  justify-items-center content-center mt-8">
           <div className="bg-[#0B0D0D] content-card w-full md:w-[90%] mb-5 h-1/2  rounded-lg  border-[#0B0D0D] border-2 shadow-md">
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-3 gap-4">
               <div className="w-1/4">
                 <Image
                   src="./polygonimage.svg"
@@ -74,55 +74,17 @@ export default function Learn() {
                   Polygon Innovation and Design
                 </h1>
                 <h2 className="text-white font-light text-xs text-justify">
-                  Widely-adopted EVM-compatible 
+                  Widely-adopted EVM-compatible sidechain
                   <br />
-                  sidechain designed for low transaction
+                  designed for low transaction costs and
                   <br />
-                   costs and fast transaction times
+                  fast transaction times
                 </h2>
               </div>
-              <div className="mt-8">
-                <button className="bg-gradient-to-r from-[#A903D2] to-[#410095] hover:bg-[#410095] text-white font-semibold  border-2 border-[#A903D2] w-36 h-10 rounded-full">
-                  LEARN
-                </button>
-              </div>
-              <div className="mt-8">
-                <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                  TAKE QUIZ
-                </button>
-              </div>
-            </div>
-          </div>
 
-          <div className="bg-[#0B0D0D] content-card w-full md:w-[90%] mb-5 h-full rounded-lg border-[#0B0D0D] border-2 shadow-md">
-            <div className="grid grid-cols-4 gap-4">
-              <div className="w-1/4">
-                <Image
-                  src="./polygonimage.svg"
-                  alt="polygonimage"
-                  width={50}
-                  height={50}
-                  className="mt-4 mx-4"
-                />
-              </div>
-              <div className="mb-4 mt-2">
-                <h1 className="text-white font-bold text-[14px] font-sans">
-                  Understanding Chain Reorgs in PoS
-                </h1>
-                <h2 className="text-white font-light text-xs text-justify">
-                  Find out more about reorgs in PoS; why 
-                  <br />
-                  they happen and how they work
-                </h2>
-              </div>
-              <div className="mt-8 mb-4">
-                <button className="bg-gradient-to-r from-[#A903D2] to-[#410095] hover:bg-[#410095] text-white font-semibold py-2  border-2 border-[#A903D2] w-40 h-10 rounded-full">
-                  LEARN
-                </button>
-              </div>
-              <div className="mt-8 mb-4">
-                <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                  TAKE QUIZ
+              <div className="mt-8">
+                <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-60 h-10 rounded-full">
+                  VIEW RESOURCES
                 </button>
               </div>
             </div>
