@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 
 export default function Resources() {
@@ -9,7 +10,7 @@ export default function Resources() {
           <div className="w-1/3">
             <ul>
               <li  className="text-white font-serif font-semibold text-[13px] mb-2">Polygon Innovation and Design</li> 
-              <li  className="text-white font-serif font-normal text-[13px] mb-2">Unit 1 - Welcome </li> 
+              <Link href='/polygon' className='hover:text-[#F451E4]'><li  className="text-white font-serif font-normal text-[13px] mb-2">Unit 1 - Welcome </li> </Link>
               <li  className="text-white font-serif font-normal  text-[13px] mb-2">Unit 2 - Introduction </li>
               <li  className="text-white font-serif font-normal  text-[13px] mb-2">Unit 3 - Polygon 2.0. The Basics</li> 
               <li  className="text-white font-serif font-normal  text-[13px] mb-2">Unit 4 -  Architecture </li>
