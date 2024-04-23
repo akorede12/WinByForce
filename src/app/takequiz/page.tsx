@@ -2,13 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Learn() {
+export default function Takequiz() {
   return (
     <div className="bg-black w-[100vw] h-[100vh]">
       <div className="container mx-auto px-8 sm:px-[80px] py-[100px]">
         <div className="grid grid-cols-2 gap-10">
           <div>
-            <h1 className="text-4xl font-serif font-bold text-white">Learn</h1>
+            <h1 className="text-4xl font-serif font-bold text-white">QUIZ</h1>
           </div>
           <div>
             <form className="max-w-md mx-auto bg-[#0B0D0D]">
@@ -83,12 +83,12 @@ export default function Learn() {
               </div>
               <div className="mt-8">
                 <button className="bg-gradient-to-r from-[#A903D2] to-[#410095] hover:bg-[#410095] text-white font-semibold  border-2 border-[#A903D2] w-36 h-10 rounded-full">
-                  LEARN
+                  TAKEQUIZ
                 </button>
               </div>
               <div className="mt-8">
                 <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                  TAKE QUIZ
+                  LEARN
                 </button>
               </div>
             </div>
@@ -117,12 +117,12 @@ export default function Learn() {
               </div>
               <div className="mt-8 mb-4">
                 <button className="bg-gradient-to-r from-[#A903D2] to-[#410095] hover:bg-[#410095] text-white font-semibold py-2  border-2 border-[#A903D2] w-40 h-10 rounded-full">
-                  LEARN
+                  TAKE QUIZ
                 </button>
               </div>
               <div className="mt-8 mb-4">
                 <button className="bg-transparent hover:bg-white text-white font-semibold py-2 border-white border-2 w-40 h-10 rounded-full">
-                  TAKE QUIZ
+                  LEARN
                 </button>
               </div>
             </div>

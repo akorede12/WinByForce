@@ -2,12 +2,12 @@
 
 import { FC } from 'react';
 import Link from 'next/link';
-import NavBar from "@/components/header/Navbar";
+
 
 const QuizLobby: FC = () => {
     return (
         <div className="bg-[#020304] min-h-screen flex flex-col pb-8">
-            <NavBar />
+           
             <div className="flex-grow flex items-center justify-center p-4">
                 <div className="bg-black rounded-lg" style={{
                     width: '1163px', height: '568px', marginTop: '148px', marginLeft: 'auto', marginRight: 'auto',
