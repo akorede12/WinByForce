@@ -4,8 +4,9 @@ const How = () => {
   return (
     <div className="bg-black w-[100vw]">
       <div className="container mx-auto px-8 sm:px-[80px] py-[100px]">
+        <h1 className="text-[48px] text-white font-serif font-bold md:mx-80 md:px-6 mb-12">HOW IT WORKS</h1>
         <div className="bg-black grid-cols-2 gap-4 md:flex md:flex-row justify-items-center content-center">
-          <div className="bg-[#0B0D0D] content-card w-full md:w-[45%] mb-5 h-full  rounded-lg  border-[#AB50F4] border-2 shadow-md">
+          <div className="bg-[#0B0D0D] content-card w-full md:w-[45%] mb-5 h-full  rounded-lg  border-[#AB50F4] border-2 shadow-md md:mx-8">
             <Image
               src="./search.svg"
               alt="search"
@@ -37,7 +38,7 @@ const How = () => {
               height={50}
               className="mt-4 mx-48"
             />
-            <div className="mx-20 mb-8">
+            <div className="mx-20 mb-4">
               <h1 className="text-white font-semibold text-lg font-sans">
                 Learn
               </h1>
@@ -51,7 +52,7 @@ const How = () => {
           </div>
         </div>
         <div className="bg-black grid-cols-2 gap-4 md:flex md:flex-row justify-items-center content-center">
-          <div className="bg-[#0B0D0D] content-card w-full md:w-[45%] mb-5 h-full rounded-lg border-[#AB50F4] border-2 shadow-md">
+          <div className="bg-[#0B0D0D] content-card w-full md:w-[45%] mb-5 h-full rounded-lg border-[#AB50F4] border-2 shadow-md md:mx-8">
             <Image
               src="./question.svg"
               alt="question"

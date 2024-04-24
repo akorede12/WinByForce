@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Resources() {
   return (
-    <div className="bg-black w-[100vw] h-device">
+    <div className="bg-black w-[100vw] h-device ">
       <div className="container mx-auto px-8 sm:px-[80px] py-[100px]">
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div className="w-1/3">

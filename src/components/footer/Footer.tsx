@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="bg-[#0B0D0D] grid-row-3 gap-2 grid-flow-col justify-items-center content-center mt-8 ">
+    <div className="bg-[#0B0D0D] grid-row-3 gap-2 grid-flow-col justify-items-center content-center mt-8 w-screen">
       <div className="md:mx-96 md:px-52 mt-8">
         <h1 className="text-[#BBBBBB] font-mono font-bold text-3xl">
           BlocQuest

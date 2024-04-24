@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroButtons = () => {
   return (
-    <div className="bg-black w-[100vw] ">
+    <div className="bg-black w-[100vw]">
       <div className="container mx-auto px-8 sm:px-[80px] py-[100px]">
         <div className="bg-black grid-cols-4 gap-4 md:flex md:flex-row">
           <div className="bg-[#0B0D0D] w-1/4 place-content-center p-2 rounded-lg">
