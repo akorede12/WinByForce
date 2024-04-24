@@ -4,6 +4,8 @@ import HeroButtons from "@/components/herobuttons/HeroButton";
 import Browse from "@/components/browse/Browse";
 import How from "@/components/how/How";
 import Experience from "@/components/experience/Experience";
+import { Footer } from "@/components/footer/Footer";
+
 
 export default function Home() {
   return (
@@ -57,7 +59,9 @@ export default function Home() {
       <div>
         <Experience />
       </div>
-      
+      <div>
+        <Footer/>
+      </div>
     </main>
   );
 }
