@@ -1,30 +1,61 @@
 'use client';
 
-import { FC, useState } from 'react';
+import { FC, useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import NavBar from "@/components/header/Navbar";
+import { ethers, Contract } from 'ethers';
+import { Web3Provider } from '@ethersproject/providers';
+import MillionaireGameABI from "@/contracts/MillionaireGame.json";
+
+const contractAddress = "0x1fFac3b1a9F2186E7E6f3370d827B2b35A17B31b";
 
 const Quizzes: FC = () => {
+    const [provider, setProvider] = useState<Web3Provider | null>(null);
+    const [gameContract, setGameContract] = useState<Contract | null>(null);
+    const [question, setQuestion] = useState<string>('');
+    const [answers, setAnswers] = useState<string[]>([]);
+    const [questionNumber, setQuestionNumber] = useState<number>(0);
 
-    // State to keep track of the current question number
-    const [questionNumber, setQuestionNumber] = useState(1);
-    const [question, setQuestion] = useState("What is zkSync primarily known for?");
+    const fetchQuestion = useCallback(async () => {
+        if (!gameContract) return;
+        const currentQuestion = await gameContract.getCurrentQuestion();
+        if (typeof currentQuestion === 'object' && currentQuestion.question && Array.isArray(currentQuestion.choices)) {
+            setQuestion(currentQuestion.question);
+            setAnswers(currentQuestion.choices);
+            setQuestionNumber(await gameContract.currentQuestionIndex());
+        }
+    }, [gameContract]);
 
-    // Dummy data for answers
-    const answers = [
-        "Decentralized exchange",
-        "Proof of stake",
-        "Scalable ethereum",
-        "Consensus algorithm"
-    ];
+    useEffect(() => {
+        const initEthers = async () => {
+            if (window.ethereum) {
+                try {
+                    const provider = new Web3Provider(window.ethereum);
+                    await provider.send("eth_requestAccounts", []); // Request account access
+                    const signer = provider.getSigner() as any;
+                    const address = await signer.getAddress(); // Will throw if no accounts are connected
+                    const gameContract = new Contract(contractAddress, MillionaireGameABI.abi, signer);
+                    setProvider(provider);
+                    setGameContract(gameContract);
+                    fetchQuestion();
+                } catch (error) {
+                    console.error("Error initializing ethers:", error);
+                }
+            } else {
+                console.error("Please install MetaMask!");
+            }
+        };
 
-    // Function to go to the next question
-    const nextQuestion = () => {
-        setQuestionNumber(questionNumber + 1);
-        // Here you could also change the `question` state to the next question based on logic
+        initEthers();
+    }, [fetchQuestion]);
+
+
+    const handleAnswer = async (index: number) => {
+        if (!gameContract) return;
+        await gameContract.answerQuestion(index.toString());
+        fetchQuestion();  // Fetch the next question after answering
     };
-
 
     return (
         <div className="bg-[#020304] min-h-screen flex flex-col pb-8">
@@ -34,33 +65,10 @@ const Quizzes: FC = () => {
                     width: '1163px', height: '568px', marginTop: '148px', marginLeft: 'auto', marginRight: 'auto',
                     backgroundImage: 'url(/quizlobbyImg.png)', backgroundSize: 'cover', backgroundPosition: 'center'
                 }}>
-                    <div className="flex justify-between items-center px-12 py-4">
-                        <div className="flex items-center">
-                            <Image className='mr-4' src="/group.png" alt="Group icon" width={28} height={28} />
-                            <Link href="/opts" className="text-white text-md sm:text-lg">Opts</Link>
-                        </div>
-                        <div className="flex items-center">
-                            <Link href="/leaderboard" className="text-white text-md sm:text-lg mr-4">LEADERBOARD</Link>
-                            <Link href="/leave-game" className="text-white text-md sm:text-lg">LEAVE GAME</Link>
-                        </div>
-                    </div>
-
-                    {/* Question navigation and display */}
-                    <div className="text-center mb-4">
-                        <h2 className="text-[#F451E4] text-md mb-4 inline-block p-2 border border-[#F451E4] rounded-full cursor-pointer" onClick={nextQuestion}>
-                            Question {questionNumber}
-                        </h2>
-                        <p className="text-white text-xl w-64 mx-auto text-center break-words">
-                            {question}
-                        </p>
-
-                    </div>
-                    <hr className="mx-20 my-16" style={{ borderColor: '#C510C9' }} />
-
-                    {/* Answers grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center my-4 mx-4">
                         {answers.map((answer, index) => (
                             <button key={index}
+                                onClick={() => handleAnswer(index)}
                                 className="bg-[#0B0D0D] hover:bg-white text-white font-semibold py-2 border-[#F451E4] border-2 w-80 sm:w-96 rounded-full text-center">
                                 {`${String.fromCharCode(65 + index)}. ${answer}`}
                             </button>
