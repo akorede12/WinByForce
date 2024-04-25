@@ -4,6 +4,40 @@ import "./globals.css";
 import NavigationBar from "@/components/header/Navbar";
 import { Footer } from "@/components/footer/Footer";
 
+// // rainbowkit
+// import '@rainbow-me/rainbowkit/styles.css';
+
+// import {
+//   getDefaultConfig,
+//   RainbowKitProvider,
+//   getDefaultWallets
+// } from '@rainbow-me/rainbowkit';
+// import {
+//   argentWallet,
+//   trustWallet,
+//   ledgerWallet,
+// } from '@rainbow-me/rainbowkit/wallets';
+// import { WagmiProvider } from 'wagmi';
+// import {
+//   mainnet,
+//   polygon,
+//   optimism,
+//   arbitrum,
+//   base
+// } from 'wagmi/chains';
+// import {
+//   QueryClientProvider,
+//   QueryClient,
+// } from "@tanstack/react-query";
+
+// const config = getDefaultConfig({
+//   appName: 'My RainbowKit App',
+//   projectId: 'YOUR_PROJECT_ID',
+//   chains: [mainnet, polygon, optimism, arbitrum, base],
+//   ssr: true, // If your dApp uses server side rendering (SSR)
+// });
+
+// const queryClient = new QueryClient();
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,14 +52,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // <WagmiProvider config={config}>
+    // <QueryClientProvider client={queryClient}>
+    //   <RainbowKitProvider>
     <html lang="en">
       <body className={inter.className}>
         <main className="relative flex flex-col min-h-screen w-screen">
           <NavigationBar/>
         <div className="flex-grow flex-1">  {children}</div>
-        
         </main>
       </body>
     </html>
+    /* </RainbowKitProvider>
+      </QueryClientProvider>
+    </WagmiProvider> */
   );
-}
+};
+//   );
+// }
