@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export const Footer = () => {
   return (
     <div className="bg-[#0B0D0D] grid-row-3 gap-2 grid-flow-col justify-items-center content-center mt-8 w-screen">
       <div className="md:mx-96 md:px-52 mt-8">
-        <h1 className="text-[#BBBBBB] font-mono font-bold text-3xl">
+        <Link href='/'><h1 className="text-[#BBBBBB] font-mono font-bold text-3xl">
           BlocQuest
-        </h1>
+        </h1></Link>
       </div>
 
       <div
@@ -42,7 +44,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="md:mx-96 md:px-48 mb-2">
-        <h1 className="text-[#BBBBBB] font-mono text-2xl font-bold"> &copy; BlocQuest 2024</h1>
+        <Link href='/'><h1 className="text-[#BBBBBB] font-mono text-2xl font-bold"> &copy; BlocQuest 2024</h1></Link>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Welcome() {
   return (
-    <div className="bg-black w-[100vw] h-device">
+    <div className="bg-black w-[100vw] h-[100vh]">
       <div className="container mx-auto px-8 sm:px-[80px] py-[100px]">
         <div className="mx-96 px-6">
             <h1 className="text-4xl font-serif font-bold text-white">Welcome</h1>

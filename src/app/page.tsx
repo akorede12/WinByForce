@@ -9,7 +9,7 @@ import { Footer } from "@/components/footer/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 w-screen">
+    <main className="flex min-h-screen flex-col items-center justify-between  w-screen">
        
       <section>
         <Image
@@ -23,7 +23,7 @@ export default function Home() {
           className="absolute -z-10 inset-0"
         />
 
-        <h1 className="text-[96px] text-white font-serif font-bold md:mx-8">
+        <h1 className="text-[96px] text-white font-serif font-bold md:mx-8 mt-20">
           LEARNING
           
         </h1>
@@ -59,9 +59,9 @@ export default function Home() {
       <div>
         <Experience />
       </div>
-      <div>
+      <footer>
         <Footer/>
-      </div>
+      </footer>
     </main>
   );
 }

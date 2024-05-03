@@ -24,7 +24,7 @@ const NavigationBar: React.FC = () => {
     <header className="w-full fixed top-0 left-0 z-50 bg-black">
       <nav className="flex items-center justify-between p-6 lg:px-8 lg:mx-8">
         <div className="flex items-center">
-          <h1 className="text-xl text-white font-bold">BlocQuest</h1>
+          <Link href='/'><h1 className="text-xl text-white font-bold">BlocQuest</h1></Link>
         </div>
         <div className="flex items-center">
           <Image src="/group.png" alt="Group icon" width={28} height={28} />

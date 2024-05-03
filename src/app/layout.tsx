@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/header/Navbar";
-import { Footer } from "@/components/footer/Footer";
+
 
 // // rainbowkit
 // import '@rainbow-me/rainbowkit/styles.css';
@@ -59,7 +59,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className="relative flex flex-col min-h-screen w-screen">
           <NavigationBar/>
-        <div className="flex-grow flex-1">  {children}</div>
+        <div>  {children}</div>
         </main>
       </body>
     </html>
