@@ -39,6 +39,9 @@ export default function Home() {
           World of Web3 with BlocQuest
         </h4>
         <div className="flex gap-2 mt-8 md:mx-8">
+          
+            {/* registerUser  */}
+
           <button className="bg-[#C510C9] hover:bg-white text-white font-semibold py-2  border-white border-2 w-40 h-10 rounded-full">
             <Link href="/learn">LEARN & EARN</Link>
           </button>
