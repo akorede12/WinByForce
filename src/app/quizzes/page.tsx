@@ -10,7 +10,16 @@ import MillionaireGameABI from "@/contracts/MillionaireGame.json";
 
 const contractAddress = "0x1fFac3b1a9F2186E7E6f3370d827B2b35A17B31b";
 
-// getCurrentQuestion getQuestion answerQuestion useLifeline  claimTokens calculateParticipationTokens getWinner
+/* 
+getCurrentQuestion 
+getQuestion 
+answerQuestion 
+useLifeline  
+claimTokens 
+calculateParticipationTokens 
+getWinner */
+
+
 
 const Quizzes: FC = () => {
     const [provider, setProvider] = useState<Web3Provider | null>(null);
