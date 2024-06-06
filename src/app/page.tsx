@@ -6,12 +6,10 @@ import How from "@/components/how/How";
 import Experience from "@/components/experience/Experience";
 import { Footer } from "@/components/footer/Footer";
 
-// Still need to figure client side rendering
-// import {RegisterUser} from "@/components/interaction/registerUser";
 
-import dynamic from 'next/dynamic';
 
-const RegisterUser = dynamic(() => import("@/components/Interaction/registerUser"), { ssr: false });
+
+
 
 
 export default function Home() {
@@ -47,15 +45,15 @@ export default function Home() {
         </h4>
         <div className="flex gap-2 mt-8 md:mx-8">
           
-            {/* registerUser  */}
+           
 
           <button className="bg-[#C510C9] hover:bg-white text-white font-semibold py-2  border-white border-2 w-40 h-10 rounded-full">
             <Link href="/learn">LEARN & EARN</Link>
           </button>
-          {/* <button className="bg-transparent hover:bg-white text-white font-semibold py-2  border-white border-2 w-64 h-10 rounded-full" onClick={RegisterUser}>
+          <button className="bg-transparent hover:bg-white text-white font-semibold py-2  border-white border-2 w-64 h-10 rounded-full">
             REGISTER AS USER
-          </button> */}
-          <RegisterUser/>
+          </button> 
+          
           <button className="bg-transparent hover:bg-white text-white font-semibold py-2  border-white border-2 w-64 h-10 rounded-full">
             REGISTER AS PROTOCOL
           </button>
