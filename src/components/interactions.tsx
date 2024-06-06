@@ -1,15 +1,15 @@
-import {ethers} from 'ethers';
+// import {ethers} from 'ethers';
 
-import contractAbi from '../../contracts/MillionaireGame.json';
+// import contractAbi from '../../contracts/MillionaireGame.json';
 
-// MillionaireGame contract address = 0x1fFac3b1a9F2186E7E6f3370d827B2b35A17B31b
+// // MillionaireGame contract address = 0x1fFac3b1a9F2186E7E6f3370d827B2b35A17B31b
 
-const contractAddress = '0x1fFac3b1a9F2186E7E6f3370d827B2b35A17B31b';
+// const contractAddress = '0x1fFac3b1a9F2186E7E6f3370d827B2b35A17B31b';
 
-const provider = new ethers.JsonRpcProvider('https://rpc-amoy.polygon.technology/');
+// const provider = new ethers.JsonRpcProvider('https://rpc-amoy.polygon.technology/');
 
 // read contract 
-const pContract = new ethers.Contract(contractAddress, contractAbi, provider);
+// const pContract = new ethers.Contract(contractAddress, contractAbi, provider);
 
 // const signer = await provider.getSigner();
 // sign contract
@@ -17,22 +17,24 @@ const pContract = new ethers.Contract(contractAddress, contractAbi, provider);
 
 
 
-// Export the write contract instance
-export default pContract;
+// // Export the write contract instance
+// export default pContract;
 
-export async function registerUser() {
-    try {
-    const signer = await provider.getSigner();
-    // signer contract
-    const sContract = new ethers.Contract(contractAddress, contractAbi, signer);    
-    const txn = await sContract.register();
-    await txn.wait();
-    console.log("user registered")
-    }
-    catch (error) {
-        console.error('user registeration failed', error);
-    }
-}
+
+
+// export async function registerUser() {
+//     try {
+//     const signer = await provider.getSigner();
+//     // signer contract
+//     const sContract = new ethers.Contract(contractAddress, contractAbi, signer);    
+//     const txn = await sContract.register();
+//     await txn.wait();
+//     console.log("user registered")
+//     }
+//     catch (error) {
+//         console.error('user registeration failed', error);
+//     }
+// }
 
 // setPreferredProtocol(Protocol protocol)
 export async function setProtocol(protocol: string) {

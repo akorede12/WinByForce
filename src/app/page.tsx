@@ -7,6 +7,11 @@ import Experience from "@/components/experience/Experience";
 import { Footer } from "@/components/footer/Footer";
 
 
+
+
+
+
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between  w-screen">
@@ -40,14 +45,19 @@ export default function Home() {
         </h4>
         <div className="flex gap-2 mt-8 md:mx-8">
           
-            {/* registerUser  */}
+           
 
           <button className="bg-[#C510C9] hover:bg-white text-white font-semibold py-2  border-white border-2 w-40 h-10 rounded-full">
             <Link href="/learn">LEARN & EARN</Link>
           </button>
           <button className="bg-transparent hover:bg-white text-white font-semibold py-2  border-white border-2 w-64 h-10 rounded-full">
+            REGISTER AS USER
+          </button> 
+          
+          <button className="bg-transparent hover:bg-white text-white font-semibold py-2  border-white border-2 w-64 h-10 rounded-full">
             REGISTER AS PROTOCOL
           </button>
+
         </div>
       </section>
       <div className="mt-40">
